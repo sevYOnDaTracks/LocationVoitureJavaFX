@@ -1,4 +1,4 @@
-package fr.location.abiproject.controller;
+package fr.location.abiproject;
 
 
 import com.gluonhq.charm.glisten.control.TextField;

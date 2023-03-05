@@ -7,7 +7,6 @@ module fr.location.abiproject {
     requires java.sql;
 
     opens fr.location.abiproject to javafx.fxml;
-    opens fr.location.abiproject.controller to javafx.fxml;
     exports fr.location.abiproject;
-    exports fr.location.abiproject.controller;
+
 }

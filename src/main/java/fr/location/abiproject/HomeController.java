@@ -1,4 +1,4 @@
-package fr.location.abiproject.controller;
+package fr.location.abiproject;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -24,7 +24,7 @@ public class HomeController {
         // Rediriger vers la page d'inscription
         Stage stage = (Stage) signupButton.getScene().getWindow();
         // Charger le fichier FXML de la page d'inscription
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("acceuil.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("user_registration.fxml"));
         try {
             // Charger la page d'inscription
             stage.setScene(new Scene(loader.load()));
