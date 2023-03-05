@@ -13,6 +13,6 @@
             <Font size="23.0" />
          </font>
       </Text>
-      <Button fx:id="seDeconnecter" layoutX="311.0" layoutY="433.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="466.0" text="Se deconnecter" />
+      <Button fx:id="seDeconnecter" layoutX="311.0" layoutY="433.0" mnemonicParsing="false" onAction="#SeDeconnecter" prefHeight="26.0" prefWidth="466.0" text="Se deconnecter" />
    </children>
 </AnchorPane>
