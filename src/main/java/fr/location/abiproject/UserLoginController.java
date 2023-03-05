@@ -3,6 +3,8 @@ package fr.location.abiproject;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
@@ -44,7 +46,15 @@ public class UserLoginController {
         if (authenticateUser(username, password)) {
 
             // Rediriger l'utilisateur vers la page d'accueil
-
+            try {
+                Parent accueilView = FXMLLoader.load(getClass().getResource("main.fxml"));
+                Scene accueilScene = new Scene(accueilView);
+                Stage appStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                appStage.setScene(accueilScene);
+                appStage.show();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
 
         } else {
             showAlert("Nom d'utilisateur ou mot de passe incorrect.");
