@@ -12,7 +12,7 @@
                 <Font name="PorscheNextTT-Regular" size="35.0" />
             </font>
         </Text>
-        <Button fx:id="signupButton" layoutX="374.0" layoutY="438.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="95.0" prefWidth="343.0" text="S'inscrire">
+        <Button fx:id="signupButton" layoutX="373.0" layoutY="461.0" mnemonicParsing="false" onAction="#handleSignup" prefHeight="95.0" prefWidth="343.0" text="S'inscrire">
             <font>
                 <Font size="22.0" />
             </font>
@@ -22,5 +22,10 @@
             <font>
                 <Font size="15.0" />
             </font></Text>
+      <Button fx:id="loginButton" layoutX="373.0" layoutY="259.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="95.0" prefWidth="343.0" text="Se connecter">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>

@@ -33,6 +33,20 @@ public class HomeController {
         }
     }
 
+    @FXML
+    void handleLogin(ActionEvent event) {
+        // Rediriger vers la page d'inscription
+        Stage stage = (Stage) loginButton.getScene().getWindow();
+        // Charger le fichier FXML de la page d'inscription
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("user_login.fxml"));
+        try {
+            // Charger la page d'inscription
+            stage.setScene(new Scene(loader.load()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 
